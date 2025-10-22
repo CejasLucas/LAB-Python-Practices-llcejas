@@ -1,12 +1,24 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Data
+names = ['María', 'Pablo', 'Ema', 'Franco', 'Estefanía', 'Pedro']
+tea = np.array([1, 2, 5, 2, 1, 3])
+water = np.array([10, 3, 14, 12, 15, 13])
+coffee = np.array([5, 5, 7, 6, 7, 4])
+
 def run_exercise_5():
-    # Data
-    tea = np.array([1, 2, 5, 2, 1, 3])
-    water = np.array([10, 3, 14, 12, 15, 13])
-    coffee = np.array([5, 5, 7, 6, 7, 4])
-    names = ['María', 'Pablo', 'Ema', 'Franco', 'Estefanía', 'Pedro']
+    print("Using the drink intake data (coffee, tea, and water) ")
+    print("for six people over six days, create a stacked bar chart.")
+    print("Determine who drinks the most and who drinks the least.")
+    print("Could this data also be represented using a box plot?\n")
+
+    print("=" * 45)
+    print(f"{'Name':<10} {'Tea':>10} {'Water':>10} {'Coffee':>10}")
+    print("-" * 45)
+    for i in range(len(names)):
+        print(f"{names[i]:<10} {tea[i]:>10,.1f} {water[i]:>10,.1f} {coffee[i]:>8,.1f} ")
+    print("=" * 45 + "\n")
 
     # Configuration basic
     x = np.arange(len(names))
@@ -29,7 +41,8 @@ def run_exercise_5():
     ax.set_xticklabels(names, rotation=0)
     ax.legend()
 
-    plt.gcf().canvas.manager.set_window_title("Beverage Consumption by Person")
+    plt.gcf().canvas.manager.set_window_title("Matplotlib - Exercise 5")
+    plt.suptitle("Beverage Consumption by Person.", fontsize=12, fontweight='bold')
     plt.tight_layout()
     plt.grid(axis='y', linestyle='--', alpha=0.5)
     plt.show()

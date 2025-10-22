@@ -29,6 +29,17 @@ def get_surface_areas():
 
 
 def run_exercise_3():
+    print("Using the provided population and land area data generate")
+    print("a graph showing the relationship between population")
+    print("and surface area of American and Caribbean countries.\n")
+
+    print("=" * 65)
+    print(f"{'Country':<15} {'Population':>20} {'Area':>20}")
+    print("-" * 65)
+    for country, (population, area) in country_with_population_area_color.items():
+        print(f"{country:<15} {population:>20,.1f} {area:>20,.1f}")
+    print("=" * 65 + "\n")
+
     countries = get_country_names()
     surfaces = get_surface_areas()
     populations = get_population_numbers()
@@ -39,7 +50,7 @@ def run_exercise_3():
     width = 0.4
 
     # Fixed colors for all populations and surfaces
-    population_color = "#40E0D0"
+    population_color = "#4169E1"
     surface_color = "#FF69B4"
 
     pop_bars = ax1.bar(x - width/2, populations, width, label='Population', color=population_color, alpha=0.8)
@@ -63,6 +74,7 @@ def run_exercise_3():
     fig.legend(handles1 + handles2, labels1 + labels2, loc="upper right", bbox_to_anchor=(0.9, 0.9), fontsize=13)
 
     # Window title and layout
-    plt.gcf().canvas.manager.set_window_title("Comparison of Population and Surface")
+    plt.gcf().canvas.manager.set_window_title("Matplotlib - Exercise 3")
+    plt.suptitle("Comparison of Population and Surface", fontsize=12, fontweight='bold')
     plt.tight_layout()
     plt.show()

@@ -17,6 +17,15 @@ PIB_2020 = {
 }
 
 def run_exercise_1():
+    print("Create lists with the GDP data of Latin American countries (2019),")
+    print("and generate a bar chart that clearly visualizes the information.\n")
+
+    print("=" * 45)
+    print(f"{'Country':<15} {'GDP (millions USD)':>15}")
+    print("-" * 45)
+    for country, (gdp, color) in PIB_2020.items(): print(f"{country:<15} {gdp:>15,.1f}")
+    print("=" * 45 + "\n")
+
     country_names = list(PIB_2020.keys())
     country_values = [value for value, color in PIB_2020.values()]
     palette = [color for value, color in PIB_2020.values()]
@@ -35,5 +44,7 @@ def run_exercise_1():
     plt.ylabel('GDP (Million USD)', fontsize=12)
     plt.xticks(rotation=45, ha='right')
 
+    plt.gcf().canvas.manager.set_window_title("Matplotlib - Exercise 1")
+    plt.suptitle("Latin American Countries in 2020", fontsize=12, fontweight='bold')
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.show()

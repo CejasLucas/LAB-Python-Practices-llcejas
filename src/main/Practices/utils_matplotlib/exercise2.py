@@ -17,6 +17,15 @@ PIB_2020 = {
 }
 
 def run_exercise_2():
+    print("Using the same GDP data, generate a pie chart showing each country’s")
+    print("percentage of the total. Highlight your country by separating its slice.")
+
+    print("=" * 45)
+    print(f"{'Country':<15} {'GDP (millions USD)':>15}")
+    print("-" * 45)
+    for country, (gdp, color) in PIB_2020.items(): print(f"{country:<15} {gdp:>15,.1f}")
+    print("=" * 45 + "\n")
+
     palette = [color for value, color in PIB_2020.values()]
     country_values = [value for value, color in PIB_2020.values()]
     country_names = list(PIB_2020.keys())
@@ -38,7 +47,7 @@ def run_exercise_2():
     fig = plt.gcf()
     fig.gca().add_artist(centre_circle)
 
-    #plt.title('GDP of Latin American Countries in 2020 (Millions USD)', fontsize=14)
-    plt.gcf().canvas.manager.set_window_title("Latin American Countries in 2020")
+    plt.gcf().canvas.manager.set_window_title("Matplotlib - Exercise 2")
+    plt.suptitle("Latin American Countries in 2020", fontsize=12, fontweight='bold')
     plt.tight_layout()
     plt.show()
