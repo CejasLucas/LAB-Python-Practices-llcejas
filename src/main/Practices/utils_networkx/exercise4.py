@@ -38,8 +38,20 @@ def print_shortest_paths(graph: nx.Graph):
 
 
 def run_exercise_4():
+    print("For the weighted graph G where vertices")
+    print("are cities and weights are distances (km):")
+    print(" a) Using the appropriate algorithm, find the")
+    print(" shortest distances from A to all other cities.")
+    print(" b) A new route between B and G changes the distance")
+    print(" from A to H to 68 km. Find the weight of edge {B, G}.")
+
     # Step 1: build the initial graph
     graph = build_graph(get_initial_graph_data())
+    print("\n" + "=" * 30)
+    print(f"{'MAIN GRAPH':^30}")
+    print("=" * 30)
+    for edge in graph.edges(): print("-", edge)
+    print("=" * 30)
 
     # Step 2: visualize the original graph
     original_style = GraphStyle(node_color=theme_palette[3]["node"], edge_color=theme_palette[3]["edge"])

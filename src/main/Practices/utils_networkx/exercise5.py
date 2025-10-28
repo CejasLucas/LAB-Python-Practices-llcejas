@@ -34,7 +34,16 @@ def rename_nodes(graph: nx.Graph, mapping: dict):
 
 def run_exercise_5():
     # Step 1: Build the initial graph
+    print("Ana and Pedro want to visit Prague. The main tourist spots, routes")
+    print("and distances (km) are given in a table. Draw the associated graph:")
+    for key, landmark in landmark_names.items(): print(f"{key} -> {landmark}")
     graph = build_graph(get_initial_graph_data())
+
+    print("\n" + "=" * 30)
+    print(f"{'MAIN GRAPH':^30}")
+    print("=" * 30)
+    for edge in graph.edges(): print("-", edge)
+    print("=" * 30)
 
     # Step 2: Rename nodes to real Prague landmarks
     graph = rename_nodes(graph, landmark_names)

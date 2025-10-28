@@ -14,10 +14,17 @@ def get_graph_data():
         ("F", "H", 11)
     ]
 
-def display_graph_info(path: list[str], cost: float):
-    print("\n=== SHORTEST PATH from A to H ===")
-    print(" -> ".join(path))
-    print(f"Total fuel needed: {cost} units \n")
+def display_graph_info(graph: nx.Graph, path: list[str], cost: float):
+    print("\n" + "=" * 40)
+    print(f"{'MAIN GRAPH':^30}")
+    print("=" * 40)
+
+    print("⤵️  All EDGES")
+    for edge in graph.edges(): print("-", edge)
+
+    print("=" * 40)
+    print(f"\nTotal fuel needed: {cost} units")
+    print("Shorted Path: " + " -> ".join(path))
 
 def highlight_path_subgraph(graph: nx.Graph, path: list[str]) -> nx.Graph:
     edges_in_path = [(path[i], path[i+1]) for i in range(len(path) - 1)]
@@ -28,6 +35,9 @@ def highlight_path_subgraph(graph: nx.Graph, path: list[str]) -> nx.Graph:
     return path_subgraph
 
 def run_exercise_3():
+    print("Given a weighted graph G = (V, A) with vertices A–H")
+    print("representing towns and edge weights as fuel usage,")
+    print("determine the fuel needed for the shortest route from A to H.")
     graph = build_graph(get_graph_data())
     base_style = GraphStyle()
     base_style.draw_graph_pyvis(graph, "Exercise3 Transportation Map")
@@ -40,4 +50,4 @@ def run_exercise_3():
     highlight_style = GraphStyle(node_color=theme_palette[2]["node"], edge_color=theme_palette[2]["edge"])
     highlight_style.draw_graph_pyvis(path_subgraph, "Exercise3 Shortest path")
 
-    display_graph_info(shortest_path, total_cost)
+    display_graph_info(graph, shortest_path, total_cost)

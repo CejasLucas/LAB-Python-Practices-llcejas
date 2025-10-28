@@ -39,14 +39,19 @@ def check_pairing(graph: nx.Graph):
 
 
 def display_graph_info(graph: nx.Graph):
-    print("\n=== Part A: Check Pair Connections ===")
+    print("\n" + "=" * 60)
+    print(f"{'Part A: Check Pair Connections':^60}")
+    print("=" * 60)
     all_connected = check_pairing(graph)
     if all_connected:
-        print("\nAll pairs can work together (direct connection exists).")
+        print("✅  All pairs can work together (direct connection exists).")
     else:
-        print("\nNot all pairs are directly connected — pairing as requested is NOT fully possible.")
+        print("⚠️  Not all pairs are directly connected — pairing as requested is NOT fully possible.")
 
-    print("\n=== Part B: Shortest Path from Alvarez to Juarez ===")
+    print("\n" + "=" * 60)
+    print(f"{'Part B: Shortest Path from Alvarez to Juarez':^60}")
+    print("=" * 60)
+
     source = "Alvarez"
     target = "Juarez"
     try:
@@ -59,6 +64,18 @@ def display_graph_info(graph: nx.Graph):
 
 
 def run_exercise_6():
+    network = ["Escobar–Fernandez", "Gonzalez–Herrera", "Alvarez–Benitez", "Cejas–Dominguez", "Ibarra–Juarez"]
+
+    print("The table below shows the cable lengths (in meters)")
+    print("connecting the computers of 12 office employees.")
+
+    print("\na) The manager wants to assign pairs of ")
+    print("employees to work together as follows:")
+    for element in network: print(f"-> {element}")
+
+    print ("\nb) Find the minimum cable distance and the shortest")
+    print("path between the computers of Alvarez and Juarez.")
+
     graph = build_graph(get_initial_graph_data())
     style = GraphStyle(node_color=theme_palette[1]["node"], edge_color=theme_palette[1]["edge"])
     style.draw_graph_pyvis(graph, "Exercise6 Office Network")

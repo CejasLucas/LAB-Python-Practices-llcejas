@@ -80,5 +80,6 @@ class GraphStyle:
         net.save_graph(str(file_path))
 
         abs_path = file_path.resolve().as_uri()
-        print(f"HTML generado en: {abs_path}")
+        print(f"\nHTML link")
+        print(abs_path)
         webbrowser.open(abs_path)

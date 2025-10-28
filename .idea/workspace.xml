@@ -6,12 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ea3953c8-4e8d-47f7-88a0-4c3fb9ec797e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise4.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise5.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise6.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise4.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise5.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise6.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/style_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/style_graph.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +193,9 @@
       <workItem from="1760618235174" duration="4279000" />
       <workItem from="1760700775991" duration="7615000" />
       <workItem from="1760826736923" duration="3572000" />
-      <workItem from="1761137632210" duration="4200000" />
+      <workItem from="1761137632210" duration="4688000" />
+      <workItem from="1761517147670" duration="1867000" />
+      <workItem from="1761654507297" duration="4493000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie los colores del proyecto a naranaja">
       <option name="closed" value="true" />
