@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from src.main.Practices.__terminal_format__ import TerminalFormat
 
 PIB_2020 = {
     'Brazil': (2364409.9, '#FFB6C1'),    # Rosado claro
@@ -19,12 +20,15 @@ PIB_2020 = {
 def run_exercise_2():
     print("Using the same GDP data, generate a pie chart showing each country’s")
     print("percentage of the total. Highlight your country by separating its slice.")
+    title = (TerminalFormat.align_left("Country", 20) +
+             TerminalFormat.align_right("GDP (millions USD)", 10))
 
-    print("=" * 45)
-    print(f"{'Country':<15} {'GDP (millions USD)':>15}")
-    print("-" * 45)
-    for country, (gdp, color) in PIB_2020.items(): print(f"{country:<15} {gdp:>15,.1f}")
-    print("=" * 45 + "\n")
+    TerminalFormat.line_with_jump("=", 40)
+    print(title)
+    TerminalFormat.line("=", 40)
+    for country, (gdp, color) in PIB_2020.items():
+        print(f"{country:<15} {gdp:>15,.1f}")
+    TerminalFormat.line("=", 40)
 
     palette = [color for value, color in PIB_2020.values()]
     country_values = [value for value, color in PIB_2020.values()]

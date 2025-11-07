@@ -1,3 +1,4 @@
+from src.main.Practices.__terminal_format__ import TerminalFormat
 import matplotlib.pyplot as plt
 
 # Data
@@ -8,13 +9,16 @@ grades = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 def run_exercise_6():
     print("Plot a scatter chart showing the scores of two groups of athletes")
     print("over a range (x-axis). Use different colors to distinguish the groups.\n")
+    title = (TerminalFormat.align_left("Range", 15) +
+             TerminalFormat.align_right("First Group", 10) +
+             TerminalFormat.align_center("Second Group", 25))
 
-    print("=" * 45)
-    print(f"{'Range':<10} {'First Group':>15} {'Second Group':>15}")
-    print("-" * 45)
+    TerminalFormat.line_with_jump("=", 50)
+    print(title)
+    TerminalFormat.line("=", 50)
     for i in range(len(grades)):
-        print(f"{grades[i]:<10} {group_one[i]:>10,.1f} {group_two[i]:>15,.1f} ")
-    print("=" * 45 + "\n")
+        print(f"{grades[i]:<10} {group_one[i]:>10,.1f} {group_two[i]:>20,.1f} ")
+    TerminalFormat.line("=", 50)
 
     plt.figure(figsize=(10, 6))
     plt.scatter(grades, group_one, color='blue', label='Group 1', s=100, alpha=0.7)

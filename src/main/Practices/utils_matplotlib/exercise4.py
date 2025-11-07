@@ -1,3 +1,4 @@
+from src.main.Practices.__terminal_format__ import TerminalFormat
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -12,14 +13,17 @@ product_per_day = {
 def run_exercise_4():
     print("Using the production data of two products over five days generate")
     print("a comparative bar chart using different colors for each product.")
-    print("Days go on the x-axis, production values on the y-axis. \n")
+    print("Days go on the x-axis, production values on the y-axis.")
+    title =  (TerminalFormat.align_left("Day of the week", 22) +
+              TerminalFormat.align_right("Washing Machine", 10) +
+              TerminalFormat.align_center("Refrigerators", 30 ))
 
-    print("=" * 60)
-    print(f"{'Day of the week':<15} {'Washing Machine':>20} {'Refrigerators':>20}")
-    print("-" * 60)
+    TerminalFormat.line_with_jump("=", 60)
+    print(title)
+    TerminalFormat.line("=", 60)
     for day, (washing_machine, refrigerators) in product_per_day.items():
         print(f"{day:<15} {washing_machine:>15,.1f} {refrigerators:>20,.1f}")
-    print("=" * 60 + "\n")
+    TerminalFormat.line("=", 60)
 
     washing_machine = [value[0] for value in product_per_day.values()]
     refrigerators = [value[1] for value in product_per_day.values()]

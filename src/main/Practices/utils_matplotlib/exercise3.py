@@ -1,3 +1,4 @@
+from src.main.Practices.__terminal_format__ import TerminalFormat
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -31,14 +32,17 @@ def get_surface_areas():
 def run_exercise_3():
     print("Using the provided population and land area data generate")
     print("a graph showing the relationship between population")
-    print("and surface area of American and Caribbean countries.\n")
+    print("and surface area of American and Caribbean countries.")
+    title =  (TerminalFormat.align_left("Country", 15) +
+              TerminalFormat.align_right("Population", 20) +
+              TerminalFormat.align_center("Area", 35 ))
 
-    print("=" * 65)
-    print(f"{'Country':<15} {'Population':>20} {'Area':>20}")
-    print("-" * 65)
+    TerminalFormat.line_with_jump("=", 65)
+    print(title)
+    TerminalFormat.line("=", 65)
     for country, (population, area) in country_with_population_area_color.items():
         print(f"{country:<15} {population:>20,.1f} {area:>20,.1f}")
-    print("=" * 65 + "\n")
+    TerminalFormat.line("=", 65)
 
     countries = get_country_names()
     surfaces = get_surface_areas()

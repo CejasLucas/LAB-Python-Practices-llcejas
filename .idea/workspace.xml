@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea3953c8-4e8d-47f7-88a0-4c3fb9ec797e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Practices/__terminal_format__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/dictionaries/exercise1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/dictionaries/exercise1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/dictionaries/exercise2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/dictionaries/exercise2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/dictionaries/exercise3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/dictionaries/exercise3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise4.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise5.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise6.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_matplotlib/exercise6.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +199,8 @@
       <workItem from="1761741000014" duration="2677000" />
       <workItem from="1762215532110" duration="5725000" />
       <workItem from="1762358832999" duration="1858000" />
-      <workItem from="1762439174742" duration="9314000" />
+      <workItem from="1762439174742" duration="9622000" />
+      <workItem from="1762519926854" duration="1666000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie los colores del proyecto a naranaja">
       <option name="closed" value="true" />

@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from src.main.Practices.__terminal_format__ import TerminalFormat
 
 PIB_2020 = {
     'Brazil': (2364409.9, '#FFB6C1'),    # Rosado claro
@@ -19,12 +20,15 @@ PIB_2020 = {
 def run_exercise_1():
     print("Create lists with the GDP data of Latin American countries (2019),")
     print("and generate a bar chart that clearly visualizes the information.\n")
+    title = (TerminalFormat.align_left("Country", 20) +
+             TerminalFormat.align_right("GDP (millions USD)", 10))
 
-    print("=" * 45)
-    print(f"{'Country':<15} {'GDP (millions USD)':>15}")
-    print("-" * 45)
-    for country, (gdp, color) in PIB_2020.items(): print(f"{country:<15} {gdp:>15,.1f}")
-    print("=" * 45 + "\n")
+    TerminalFormat.line_with_jump("=", 40)
+    print(title)
+    TerminalFormat.line("=", 40)
+    for country, (gdp, color) in PIB_2020.items():
+        print(f"{country:<15} {gdp:>15,.1f}")
+    TerminalFormat.line("=", 40)
 
     country_names = list(PIB_2020.keys())
     country_values = [value for value, color in PIB_2020.values()]

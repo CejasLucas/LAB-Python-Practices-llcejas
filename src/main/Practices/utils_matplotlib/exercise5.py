@@ -1,3 +1,4 @@
+from src.main.Practices.__terminal_format__ import TerminalFormat
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -12,13 +13,14 @@ def run_exercise_5():
     print("for six people over six days, create a stacked bar chart.")
     print("Determine who drinks the most and who drinks the least.")
     print("Could this data also be represented using a box plot?\n")
+    title = f"{'Name':<10} {'Tea':>10} {'Water':>10} {'Coffee':>10}"
 
-    print("=" * 45)
-    print(f"{'Name':<10} {'Tea':>10} {'Water':>10} {'Coffee':>10}")
-    print("-" * 45)
+    TerminalFormat.line_with_jump("=", 50)
+    print(title)
+    TerminalFormat.line("=", 50)
     for i in range(len(names)):
         print(f"{names[i]:<10} {tea[i]:>10,.1f} {water[i]:>10,.1f} {coffee[i]:>8,.1f} ")
-    print("=" * 45 + "\n")
+    TerminalFormat.line("=", 50)
 
     # Configuration basic
     x = np.arange(len(names))
