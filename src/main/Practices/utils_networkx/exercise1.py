@@ -1,4 +1,6 @@
 import networkx as nx
+
+from src.main.Practices.__terminal_format__ import TerminalFormat
 from src.main.Practices.utils_networkx.style_graph import GraphStyle, build_graph, theme_palette
 
 def get_graph_data():
@@ -16,25 +18,25 @@ def draw_graph(graph):
     style.draw_graph_pyvis(graph, "Exercise1 Dijkstra Graph")
 
 def display_graph_info(graph):
-    print("\nNumber of NODES:", graph.number_of_nodes())
-    print("⤵️  All NODES ")
+    TerminalFormat().title(f"⤵️  Number of NODES: {graph.number_of_nodes()}", "=", 40)
     print(graph.nodes())
+    TerminalFormat.line("-",40)
 
-    print("\nNumber of EDGES:", graph.number_of_edges())
-    print("⤵️  All EDGES")
+    TerminalFormat().title(f"⤵️  Number of NODES: {graph.number_of_edges()}", "=", 30)
     for i, edge in enumerate(graph.edges(), start=1):
         if i % 2 == 0:
             print(edge)
         else:
             print(edge, end=' ')
+    TerminalFormat.line("-",30)
 
     shortest_path = nx.dijkstra_path(graph, "Z", "A")
     path_length = nx.dijkstra_path_length(graph, "Z", "A")
 
-    print("\n" + "=" * 60)
+    TerminalFormat.line_with_jump("*", 60)
     print("⏹️  Shortest path from Z to A:", shortest_path)
     print("⏹️  Shortest path length:", path_length)
-    print("=" * 60)
+    TerminalFormat.line("*", 60)
 
     adj_matrix = nx.adjacency_matrix(graph)
     print("\nAdjacency Matrix:")

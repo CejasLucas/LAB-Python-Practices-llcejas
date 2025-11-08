@@ -1,4 +1,5 @@
 import networkx as nx
+from src.main.Practices.__terminal_format__ import TerminalFormat
 from src.main.Practices.utils_networkx.style_graph import GraphStyle, build_graph, theme_palette
 
 elements = ["Radius", "Diameter", "Eccentricity", "Center", "Periphery", "Density"]
@@ -15,23 +16,22 @@ def get_graph_data():
 
 
 def display_graph_info(mst):
-    print("\n" + "=" * 40)
-    print(f"{'GRAPH PROPERTIES (on MST)':^40}")
-    print("=" * 40)
+    TerminalFormat().title("GRAPH PROPERTIES (on MST)", "=", 40)
     print(f"Radius: {nx.radius(mst)}")
     print(f"Center: {nx.center(mst)}")
     print(f"Density: {nx.density(mst):.4f}")
     print(f"Diameter: {nx.diameter(mst)}")
     print(f"Periphery: {nx.periphery(mst)}")
-    print("⤵️  Eccentricity per node:")
-    for node, ecc in nx.eccentricity(mst).items(): print(f"  Node {node}: {ecc}")
+    TerminalFormat.line("-", 40)
 
-    print("\n" + "=" * 40)
-    print(f"{'MINIMUM SPANNING TREE':^40}")
-    print("=" * 40)
+    TerminalFormat().title("⤵️  Eccentricity per node:", "=", 40)
+    for node, ecc in nx.eccentricity(mst).items(): print(f">> Node {node}: {ecc}")
+    TerminalFormat.line("-", 40)
+
+    TerminalFormat().title("MINIMUM SPANNING TREE", "~", 40)
     for u, v, w in mst.edges(data='weight'):
         print(f"{u} - {v} (Cost: {w} thousand $)")
-    print("\n")
+    TerminalFormat.line("-", 40)
 
 
 def run_exercise_2():

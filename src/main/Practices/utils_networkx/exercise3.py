@@ -1,4 +1,5 @@
 import networkx as nx
+from src.main.Practices.__terminal_format__ import TerminalFormat
 from src.main.Practices.utils_networkx.style_graph import GraphStyle, build_graph, theme_palette
 
 def get_graph_data():
@@ -15,16 +16,23 @@ def get_graph_data():
     ]
 
 def display_graph_info(graph: nx.Graph, path: list[str], cost: float):
-    print("\n" + "=" * 40)
-    print(f"{'MAIN GRAPH':^30}")
-    print("=" * 40)
+    TerminalFormat().title(f"⤵️  Number of NODES: {graph.number_of_nodes()}", "=", 40)
+    print(graph.nodes())
+    TerminalFormat.line("-", 40)
 
-    print("⤵️  All EDGES")
-    for edge in graph.edges(): print("-", edge)
+    TerminalFormat().title(f"⤵️  Number of NODES: {graph.number_of_edges()}", "=", 40)
+    for i, edge in enumerate(graph.edges(), start=1):
+        if i % 3 == 0:
+            print(edge)
+        else:
+            print(edge, end=' ')
+    TerminalFormat.line("-", 40)
 
-    print("=" * 40)
-    print(f"\nTotal fuel needed: {cost} units")
-    print("Shorted Path: " + " -> ".join(path))
+    TerminalFormat.line_with_jump("~", 40)
+    print(f">> Total fuel needed: {cost} units")
+    print("Shorted Path: " + " ➡️  ".join(path))
+    TerminalFormat.line("~", 40)
+
 
 def highlight_path_subgraph(graph: nx.Graph, path: list[str]) -> nx.Graph:
     edges_in_path = [(path[i], path[i+1]) for i in range(len(path) - 1)]
