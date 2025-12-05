@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const term = new Terminal({
-        theme: { background: '#000000', foreground: '#4B8BBE', cursor: '#4B8BBE' },
+        theme: { background: '#0A0A0A', foreground: '#FEFEFE', cursor: '#00D1B2' },
         fontFamily: 'Fira Mono, monospace',
         fontSize: 14
     });

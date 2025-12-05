@@ -1,22 +1,35 @@
 import matplotlib.pyplot as plt
+from src.main.Practices.__terminal_format__ import TerminalFormat
 
 PIB_2020 = {
-    'Brazil': (2364409.9, '#4C72B0'),
-    'Uruguay': (120532.1, '#C6E2DD'),
-    'Ecuador': (88554.7, '#7AB0A0'),
-    'Argentina': (440769.2, '#4C9F70'),
-    'Guyana': (11780.6, '#BFDCE5'),
-    'Colombia': (394571.1, '#2A7F62'),
-    'Venezuela': (116067.8, '#3B6978'),
-    'Peru': (210881.6, '#A0CBE8'),
-    'Suriname': (11678.2, '#D0E1F9'),
-    'Mexico': (1309880.9, '#5FB49C'),
-    'Bolivia': (29702.8, '#86C5A3'),
-    'Chile': (286013.8, '#8DB2D1'),
-    'Paraguay': (37260.6, '#88D8C0')
+    'Brazil': (2364409.9, '#FFB6C1'),    # Rosado claro
+    'Uruguay': (120532.1, '#ADD8E6'),    # Azul pastel
+    'Ecuador': (88554.7, '#00CED1'),     # Cian
+    'Argentina': (440769.2, '#87CEFA'),  # Azul claro
+    'Guyana': (11780.6, '#00FFFF'),      # Cian brillante
+    'Colombia': (394571.1, '#40E0D0'),   # Turquesa
+    'Venezuela': (116067.8, '#BA55D3'),  # Violeta medio
+    'Peru': (210881.6, '#87CEEB'),       # Azul celeste
+    'Suriname': (11678.2, '#4169E1'),    # Azul royal
+    'Mexico': (1309880.9, '#DA70D6'),    # Violeta
+    'Bolivia': (29702.8, '#8A2BE2'),     # Violeta oscuro
+    'Chile': (286013.8, '#FF69B4'),      # Rosa fuerte
+    'Paraguay': (37260.6, '#FF1493')     # Rosado intenso
 }
 
 def run_exercise_2():
+    print("Using the same GDP data, generate a pie chart showing each country’s")
+    print("percentage of the total. Highlight your country by separating its slice.")
+    title = (TerminalFormat.align_left("Country", 20) +
+             TerminalFormat.align_right("GDP (millions USD)", 10))
+
+    TerminalFormat.line_with_jump("=", 40)
+    print(title)
+    TerminalFormat.line("=", 40)
+    for country, (gdp, color) in PIB_2020.items():
+        print(f"{country:<15} {gdp:>15,.1f}")
+    TerminalFormat.line("=", 40)
+
     palette = [color for value, color in PIB_2020.values()]
     country_values = [value for value, color in PIB_2020.values()]
     country_names = list(PIB_2020.keys())
@@ -38,7 +51,7 @@ def run_exercise_2():
     fig = plt.gcf()
     fig.gca().add_artist(centre_circle)
 
-    #plt.title('GDP of Latin American Countries in 2020 (Millions USD)', fontsize=14)
-    plt.gcf().canvas.manager.set_window_title("Latin American Countries in 2020")
+    plt.gcf().canvas.manager.set_window_title("Matplotlib - Exercise 2")
+    plt.suptitle("Latin American Countries in 2020", fontsize=12, fontweight='bold')
     plt.tight_layout()
     plt.show()

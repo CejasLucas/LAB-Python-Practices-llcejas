@@ -1,4 +1,6 @@
 def run_exercise_4():
+    print("\nAsk the user to enter a letter. If it’s a vowel, print “It’s a vowel”.")
+    print("If the input has more than one character, show an error message.")
     character_input = input("\nEnter a character: ")
     character = character_input.strip()
     vowels = "AEIOUaeiou"

@@ -1,4 +1,6 @@
 def run_exercise_5():
+    print("Ask the user for a year and determine if it’s a leap year")
+    print("(divisible by 4 and not 100, unless also divisible by 400).")
     year_input = input("\nEnter a year: ")
     try:
         year = int(year_input.strip())

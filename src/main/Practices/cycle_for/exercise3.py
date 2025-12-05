@@ -1,5 +1,6 @@
 def run_exercise_3():
-    test_number = int(input("\nEnter a number to calculate its factorial: "))
+    print("\nAsk the user for a number and calculate its factorial.")
+    test_number = int(input("\nEnter a number to calculate: "))
     if test_number < 0:
         print("\nThere is no factorial of a negative number")
     elif test_number < 2:

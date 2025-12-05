@@ -1,4 +1,6 @@
 def run_exercise_2():
+    print("\nAsk for a day of the week. Print a specific message if it’s Monday, Friday,")
+    print("Saturday, or Sunday. Print a different message for other days.")
     day_input = input("\nEnter a number from 1 to 7 to get the day of the week: ")
 
     try:

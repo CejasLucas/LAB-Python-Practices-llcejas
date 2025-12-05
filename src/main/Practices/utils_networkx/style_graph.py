@@ -10,10 +10,10 @@ OUTPUT_DIR = PROJECT_ROOT / "outputs"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 theme_palette = {
-    1: {"node": "#345E44", "edge": "#63A86E"},
-    2: {"node": "#19404C", "edge": "#63757D"},
-    3: {"node": "#7B5C3F", "edge": "#C3A481"},
-    4: {"font": "#0A0A0A", "label": "#404040"}
+    1: {"node": "#6C63FF", "edge": "#9D8CFF"},
+    2: {"node": "#00D1B2", "edge": "#66E0D6"},
+    3: {"node": "#FF7FBF", "edge": "#FFB0D1"},
+    4: {"font": "#141414", "label": "#0A0A0A"}
 }
 
 
@@ -80,5 +80,6 @@ class GraphStyle:
         net.save_graph(str(file_path))
 
         abs_path = file_path.resolve().as_uri()
-        print(f"HTML generado en: {abs_path}")
+        print(f"\nHTML link")
+        print(abs_path)
         webbrowser.open(abs_path)

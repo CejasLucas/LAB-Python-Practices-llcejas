@@ -1,6 +1,8 @@
 def run_exercise_2():
     sum = 0
     odd_numbers = []
+    print("\nAsk the user for a number N, then calculate")
+    print("the sum of the first N odd numbers.")
     stop = int(input("\nEnter a number: "))
     for number in range(0,stop):
         if number % 2 != 0:

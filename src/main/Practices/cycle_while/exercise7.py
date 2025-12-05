@@ -1,6 +1,9 @@
 def run_exercise_7():
     list_of_numbers = []
-
+    print("\nAsk for two integers (min and max).")
+    print("Then keep asking for numbers between them.")
+    print("Stop when a number outside the range is entered.")
+    print("Print how many valid numbers were entered.")
     while True:
         min = float(input("\nEnter the minimum of the range: "))
         max = float(input("\nEnter the maximum of the range: "))

@@ -1,7 +1,8 @@
 def run_exercise_4():
     x, y, z = 1, 1, 1
     fibonacci_sequence = []
-    test_number = int(input("\nEnter a number to calculate its Fibonacci sequence: "))
+    print("\nAsk for a number N and display the first N numbers of the Fibonacci sequence.")
+    test_number = int(input("\nEnter a number to calculate: "))
     if test_number > 0:
         for number in range(test_number):
             z = x + y

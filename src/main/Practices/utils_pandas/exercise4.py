@@ -1,5 +1,8 @@
-import os
+from pathlib import Path
 import pandas as pd
+
+PROJECT_ROOT = Path(__file__).resolve().parents[4]
+DATA_FILE = PROJECT_ROOT / "data" / "cars_database.csv"
 
 def calculated_pandas_df(dataframe):
     dataframe['Price'] = pd.to_numeric(dataframe['Price'], errors='coerce')
@@ -18,18 +21,25 @@ def calculated_pandas_df(dataframe):
 
 
 def run_exercise_4():
-    base_path = os.path.dirname(__file__)
-    file_path = os.path.join(base_path, "..", "..", "..", "data", "cars_database.csv")
-    file_path = os.path.abspath(file_path)
+    print("\nUsing the file autos.xlsx (car prices and stock data) ")
+    print("write code to display the minimum, maximum, and average price.")
+    print(f"\nSearching for the file at: {DATA_FILE}")
 
-    print(f"Searching for the file at: {file_path}\n")
+    if not DATA_FILE.exists():
+        raise FileNotFoundError(f"\n❌ The file does not exist in: {DATA_FILE}")
 
-    dataframe = pd.read_csv(file_path, delimiter=";")
+    dataframe = pd.read_csv(DATA_FILE, delimiter=";")
 
     new_dataframe = calculated_pandas_df(dataframe)
 
-    print(f"cars_database.csv file found, its content is as follows:\n{dataframe}\n")
+    print("\n"+ "=" * 50)
+    print(f"{'🚦  cars_database.csv file found':^50}")
+    print("=" * 50)
+    print(dataframe)
+    print("-" * 50)
 
-    pd.set_option('display.float_format', '{:.0f}'.format)
-
-    print(f"Car price summary with Pandas DataFrame:\n{new_dataframe}\n")
+    print("\n" * 2 + "=" * 50)
+    print(f"{'🚗  Car price summary with Pandas DataFrame':^50}")
+    print("=" * 50)
+    print(new_dataframe)
+    print("-" * 50)

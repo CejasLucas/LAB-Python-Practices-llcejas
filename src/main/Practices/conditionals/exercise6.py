@@ -1,4 +1,12 @@
 def run_exercise_6():
+    print("\nDaily class log: ")
+    print("\n- Ask for the day of the week.")
+    print("\n- If it’s Monday (beginner), Tuesday (intermediate), or Wednesday (advanced)")
+    print("  ask if there were exams. If yes, enter number of students who passed")
+    print("  and failed, then show the pass percentage.")
+    print("\n- If it’s Thursday (practice), enter class attendance percentage.")
+    print("  Show if the majority attended (over 50%).")
+    print("\n- If it’s Friday (consultation), enter number of students and fee per student.")
     while True:
         menu_text = (
             "\nWrite the number corresponding to the day of the week to complete the task:\n"

@@ -1,6 +1,7 @@
 def run_exercise_1():
-    x_input = input("\nPlease enter the first number: ")
-    y_input = input("\nPlease enter the second number: ")
+    print("\nEnter two numbers and display the smaller one.")
+    x_input = input("Please enter the first number: ")
+    y_input = input("Please enter the second number: ")
 
     try:
         x = float(x_input.strip())

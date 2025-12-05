@@ -1,5 +1,6 @@
 def run_exercise_8():
     list_of_numbers = []
+    print("\nAsk for even numbers while the user wants to continue.")
     while True:
         number = int(input("\nEnter an even number: "))
         if number % 2 == 0:

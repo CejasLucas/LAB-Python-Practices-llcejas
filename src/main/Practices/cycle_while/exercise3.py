@@ -1,4 +1,6 @@
 def run_exercise_3():
+    print("\nAsk for decimal numbers while the user")
+    print("enters values greater than the first one.")
     first_number = float(input("\nEnter a decimal number: "))
     list_of_numbers = [first_number]
 

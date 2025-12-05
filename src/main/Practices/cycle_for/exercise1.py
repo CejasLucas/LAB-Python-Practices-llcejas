@@ -1,5 +1,7 @@
 def run_exercise_1():
-    numbers = []
-    print("\nPrint the first 100 natural numbers")
-    for number in range(1,101): numbers.append(number)
-    for number in numbers: print(number)
+    print("\nPrint the first 100 natural numbers\n")
+    for number in range(0,101):
+        if number != 0 and number % 20 == 0:
+            print(f"{number} \n")
+        else:
+            print(f"{number}  ", end="")

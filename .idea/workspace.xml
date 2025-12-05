@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea3953c8-4e8d-47f7-88a0-4c3fb9ec797e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/style_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/style_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise4.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise5.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise6.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise6.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +42,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -179,6 +188,20 @@
       <workItem from="1759237922050" duration="402000" />
       <workItem from="1759321815521" duration="2134000" />
       <workItem from="1759493169846" duration="701000" />
+      <workItem from="1760544268568" duration="3340000" />
+      <workItem from="1760618235174" duration="4279000" />
+      <workItem from="1760700775991" duration="7615000" />
+      <workItem from="1760826736923" duration="3572000" />
+      <workItem from="1761137632210" duration="4688000" />
+      <workItem from="1761517147670" duration="1867000" />
+      <workItem from="1761654507297" duration="4493000" />
+      <workItem from="1761659024224" duration="67000" />
+      <workItem from="1761741000014" duration="2677000" />
+      <workItem from="1762215532110" duration="5725000" />
+      <workItem from="1762358832999" duration="1858000" />
+      <workItem from="1762439174742" duration="9622000" />
+      <workItem from="1762519926854" duration="2758000" />
+      <workItem from="1762633201199" duration="6001000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie los colores del proyecto a naranaja">
       <option name="closed" value="true" />
@@ -202,7 +225,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_practices_llcejas$app.coverage" NAME="app Coverage Results" MODIFIED="1759106581627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/WebApp" />
     <SUITE FILE_PATH="coverage/python_practices_llcejas$__main____2_.coverage" NAME="__main__ (2) Coverage Results" MODIFIED="1759070935315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/Practices/cycle_for" />
-    <SUITE FILE_PATH="coverage/python_practices_llcejas$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1759323877574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/WebApp" />
+    <SUITE FILE_PATH="coverage/python_practices_llcejas$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1760622636549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/WebApp" />
     <SUITE FILE_PATH="coverage/python_practices_llcejas$run.coverage" NAME="run Coverage Results" MODIFIED="1758488183892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WebApp" />
     <SUITE FILE_PATH="coverage/python_practices_llcejas$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1758685486978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/WebApp" />
     <SUITE FILE_PATH="coverage/python_practices_llcejas$socketio_handlers.coverage" NAME="socketio_handlers Coverage Results" MODIFIED="1758685505185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/WebApp" />

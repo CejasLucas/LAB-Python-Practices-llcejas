@@ -1,4 +1,4 @@
-@import url("color.css");
+@import url("main.css");
 
 body {
     margin: 0;
@@ -35,7 +35,7 @@ body {
     border-radius: 8px;
     overflow: auto;
     border: 2px solid var(--color-primary);
-    box-shadow: 0 6px 16px var(--color-secondary);
+    box-shadow: 0 6px 16px var(--color-primary);
     margin: 1rem;
     padding: 1rem;
     font-size: 1.1em;
@@ -45,11 +45,11 @@ body {
 
 #terminal::-webkit-scrollbar { width: 10px; height: 10px; }
 
-#terminal::-webkit-scrollbar-track { background: var(--gray-color); border-radius: 8px; }
+#terminal::-webkit-scrollbar-track { background: var(--black-color); border-radius: 8px; }
 
-#terminal::-webkit-scrollbar-thumb { background: var(--color-secondary); border-radius: 8px; }
+#terminal::-webkit-scrollbar-thumb { background: var(--color-zero); border-radius: 8px; }
 
-#terminal::-webkit-scrollbar-thumb:hover { background: var(--color-secondary); }
+#terminal::-webkit-scrollbar-thumb:hover { background: var(--color-zero); }
 
 
 #url {
@@ -60,20 +60,20 @@ body {
     padding: 6px 10px;
     background: var(--black-color);
     text-align: right;
-    border-top: 1px solid var(--color-secondary);
+    border-top: 1px solid var(--color-primary);
     z-index: 10;
 }
 
 #url a {
     font-size: 14px;
-    color: var(--color-zero);
+    color: var(--color-primary);
     text-decoration: none;
     font-weight: bold;
 }
 
 #url a:hover {
     text-decoration: underline;
-    color: var(--color-zero);
+    color: var(--color-secondary);
 }
 
 
@@ -84,7 +84,7 @@ body {
     margin-right: 15px;
     bottom: 20px;
     right: 20px;
-    background: var(--color-secondary);
+    background: var(--color-primary);
     border: none;
     color: var(--white-color);
     padding: 6px 12px;

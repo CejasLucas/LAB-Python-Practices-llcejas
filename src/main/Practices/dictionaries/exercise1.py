@@ -1,3 +1,5 @@
+from src.main.Practices.__terminal_format__ import TerminalFormat
+
 phone_book = {
     'Cejas Lucas': 1169591337,
     'Diaz Brisa': 1147894526,
@@ -5,32 +7,31 @@ phone_book = {
     'Galarza Natalia': 112458794
 }
 
-def is_valid_input(data, message):
-    if data == "":
-        print(f"\nInvalid {message}.")
-        return False
-    return True
-
-
 def run_exercise_1():
-    print("\nLeave the name empty and press Enter to finish.")
+    print("\nCreate a dictionary where the key is the user's name and the value is their")
+    print("phone number. Keep asking for contacts until the user chooses to stop.")
+    print("Names must be unique (no duplicates allowed).")
+    print(">>> Leave the name empty and press Enter to finish")
 
     while True:
-        username = input("\nContact name: ").strip()
+        TerminalFormat.line_with_jump("=", 50)
+        username = input("Contact name: ").strip()
+        user_telephone = input("Contact phone number: ").strip()
 
-        user_telephone = input("\nContact phone number: ").strip()
-
-        if not is_valid_input(username, "username"): break
-
-        if not is_valid_input(user_telephone, "phone number"): break
-
-        if not user_telephone.isdigit():
-            print("\nPhone number must contain only digits.")
+        if username == "" or user_telephone == "":
+            print("🚫   I cannot save an empty contact.")
+            TerminalFormat.line("-", 50)
             break
 
-        print("-----------------------------------------")
+        if not user_telephone.isdigit():
+            print("⚠️   The phone number must contain only digits.")
+            print("[NOTE] Repeat or leave a blank space to exit.")
+            TerminalFormat.line("-", 50)
+            continue
         phone_book[username] = int(user_telephone)
 
-    print("\nCreated contact book:")
-
-    print(phone_book)
+    TerminalFormat.number_of_spaces()
+    TerminalFormat.line("*", 50)
+    TerminalFormat.align_center("📖  Created contact book", 50)
+    TerminalFormat.line("*", 50)
+    for name, telephone in phone_book.items(): print(f"Name: {name} | Telephone: {telephone}")

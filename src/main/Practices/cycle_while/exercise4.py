@@ -1,4 +1,6 @@
 def run_exercise_4():
+    print("\nAsk for integers while the user keeps entering larger numbers.")
+    print("Print the previous number each time. Stop when a smaller number is entered.")
     previous_number = float(input("\nEnter a decimal number: "))
     list_of_numbers = [previous_number]
 

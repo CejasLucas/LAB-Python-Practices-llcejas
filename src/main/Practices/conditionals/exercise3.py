@@ -1,4 +1,7 @@
 def run_exercise_3():
+    print("\nLet the user vote for a candidate: R (Red Party), G (Green Party), ")
+    print("or B (Blue Party). Print the corresponding party.")
+    print("If the input is invalid, show “Invalid option”.")
     print("\nR = RED Party\nG = GREEN Party\nB = BLUE Party\n")
     party_input = input("Choose a letter: ")
 

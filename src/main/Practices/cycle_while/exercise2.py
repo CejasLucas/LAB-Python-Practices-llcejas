@@ -1,4 +1,6 @@
 def run_exercise_2():
+    print("\nAsk for two integers. Keep asking for the second one until")
+    print("it is greater than the first. Then print both numbers.")
     first = int(input("\nEnter the first integer: "))
     second = int(input("\nEnter the second integer: "))
 

@@ -1,4 +1,6 @@
 def run_exercise_6():
+    print("\nAsk for a positive limit. Then keep asking for numbers ")
+    print("until their total sum exceeds that limit.")
     limit_number = int(input("\nEnter a limit positive number: "))
 
     if limit_number > 0:

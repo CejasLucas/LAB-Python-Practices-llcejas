@@ -1,3 +1,4 @@
+from src.main.Practices.__terminal_format__ import TerminalFormat
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -29,6 +30,20 @@ def get_surface_areas():
 
 
 def run_exercise_3():
+    print("Using the provided population and land area data generate")
+    print("a graph showing the relationship between population")
+    print("and surface area of American and Caribbean countries.")
+    title =  (TerminalFormat.align_left("Country", 15) +
+              TerminalFormat.align_right("Population", 20) +
+              TerminalFormat.align_center("Area", 35 ))
+
+    TerminalFormat.line_with_jump("=", 65)
+    print(title)
+    TerminalFormat.line("=", 65)
+    for country, (population, area) in country_with_population_area_color.items():
+        print(f"{country:<15} {population:>20,.1f} {area:>20,.1f}")
+    TerminalFormat.line("=", 65)
+
     countries = get_country_names()
     surfaces = get_surface_areas()
     populations = get_population_numbers()
@@ -39,8 +54,8 @@ def run_exercise_3():
     width = 0.4
 
     # Fixed colors for all populations and surfaces
-    population_color = "#3B6978"
-    surface_color = "#2A7F62"
+    population_color = "#4169E1"
+    surface_color = "#FF69B4"
 
     pop_bars = ax1.bar(x - width/2, populations, width, label='Population', color=population_color, alpha=0.8)
     area_bars = ax2.bar(x + width/2, surfaces, width, label='Surface Area (km²)', color=surface_color, alpha=0.6)
@@ -63,6 +78,7 @@ def run_exercise_3():
     fig.legend(handles1 + handles2, labels1 + labels2, loc="upper right", bbox_to_anchor=(0.9, 0.9), fontsize=13)
 
     # Window title and layout
-    plt.gcf().canvas.manager.set_window_title("Comparison of Population and Surface")
+    plt.gcf().canvas.manager.set_window_title("Matplotlib - Exercise 3")
+    plt.suptitle("Comparison of Population and Surface", fontsize=12, fontweight='bold')
     plt.tight_layout()
     plt.show()
