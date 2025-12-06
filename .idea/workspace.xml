@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea3953c8-4e8d-47f7-88a0-4c3fb9ec797e" name="Changes" comment="">
+    <list default="true" id="ea3953c8-4e8d-47f7-88a0-4c3fb9ec797e" name="Changes" comment="Deje modificado el README.md">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python-practices-llcejas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python-practices-llcejas.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise4.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise5.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise6.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Practices/utils_networkx/exercise6.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +39,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsbtTreeLayoutManager">
@@ -89,7 +92,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
     &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/usuario/Documentos/GitHub/python-practices-llcejas/resources PDF/Practices&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -202,6 +205,7 @@
       <workItem from="1762439174742" duration="9622000" />
       <workItem from="1762519926854" duration="2758000" />
       <workItem from="1762633201199" duration="6001000" />
+      <workItem from="1764984973405" duration="812000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie los colores del proyecto a naranaja">
       <option name="closed" value="true" />
@@ -220,15 +224,31 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Mejore la calidad de los graficos, pero no logro que quede dentro de la terminal de xterm" />
     <MESSAGE value="Cambie los colores del proyecto a naranaja" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambie los colores del proyecto a naranaja" />
+    <MESSAGE value="Deje modificado el README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deje modificado el README.md" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/main/Practices/utils_venn_diagrams/exercise1.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/main/WebApp/routes.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_practices_llcejas$app.coverage" NAME="app Coverage Results" MODIFIED="1759106581627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/WebApp" />
     <SUITE FILE_PATH="coverage/python_practices_llcejas$__main____2_.coverage" NAME="__main__ (2) Coverage Results" MODIFIED="1759070935315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/Practices/cycle_for" />
-    <SUITE FILE_PATH="coverage/python_practices_llcejas$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1760622636549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/WebApp" />
+    <SUITE FILE_PATH="coverage/python_practices_llcejas$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1759323877574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/WebApp" />
     <SUITE FILE_PATH="coverage/python_practices_llcejas$run.coverage" NAME="run Coverage Results" MODIFIED="1758488183892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WebApp" />
     <SUITE FILE_PATH="coverage/python_practices_llcejas$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1758685486978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/WebApp" />
     <SUITE FILE_PATH="coverage/python_practices_llcejas$socketio_handlers.coverage" NAME="socketio_handlers Coverage Results" MODIFIED="1758685505185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/WebApp" />
     <SUITE FILE_PATH="coverage/python_practices_llcejas$__main____1_.coverage" NAME="__main__ (1) Coverage Results" MODIFIED="1759070898788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/Practices/conditionals" />
+    <SUITE FILE_PATH="coverage/LAB_Python_Practices_llcejas$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1764947958625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/WebApp" />
   </component>
 </project>

@@ -28,3 +28,4 @@ env/
 # Ignorar salidas generadas automáticamente
 /outputs/
 /lib/
+/.idea/
